@@ -1,4 +1,6 @@
-<a name="readme-top"></a>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TSAutoGen/TSAutoGen/main/assets/logo.png" width="200" alt="TSAutoGen Logo">
+</p>
 
 # TSAutoGen 🚀
 
@@ -28,6 +30,10 @@ TSAutoGen simplifies the orchestration, optimization, and automation of LLM work
 ## Architecture 🏗️
 
 TSAutoGen follows a modular, event-driven architecture designed for scalability and extensibility.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TSAutoGen/TSAutoGen/main/assets/architecture.png" width="800" alt="TSAutoGen Architecture Overview">
+</p>
 
 ```mermaid
 graph TD
