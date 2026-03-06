@@ -1,0 +1,8 @@
+node_modules/
+src/
+examples/
+docs/
+tsconfig.json
+.env
+coding/
+assets/
