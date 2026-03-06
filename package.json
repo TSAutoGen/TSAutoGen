@@ -1,22 +1,46 @@
 {
   "name": "tsautogen",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --loader ts-node/esm examples/basic_chat.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "A high-performance, TypeScript-native port of Microsoft's AutoGen framework for Node.js.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --loader ts-node/esm examples/basic_chat.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "autogen",
+    "ai",
+    "agents",
+    "multi-agent",
+    "typescript",
+    "llm",
+    "openai",
+    "gemini",
+    "claude"
+  ],
+  "author": "TSAutoGen Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TSAutoGen/TSAutoGen.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "@anthropic-ai/sdk": "^0.78.0",
     "@google/generative-ai": "^0.24.1",
-    "@types/node": "^25.3.5",
     "dotenv": "^17.3.1",
-    "openai": "^6.27.0",
+    "openai": "^6.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
