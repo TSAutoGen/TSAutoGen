@@ -1,0 +1,15 @@
+# Dependensi
+node_modules/
+dist/
+build/
+
+# Variabel Lingkungan (Sangat Penting!)
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Folder coding/temp hasil eksekusi kode
+coding/
